@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: "3.14"
 
+      - name: Pull changes
+        run: git pull --rebase origin main
+
       - name: Run build.py
         run: python build.py
 
@@ -32,5 +35,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Productive Work"
-          git pull --rebase origin main
           git push
