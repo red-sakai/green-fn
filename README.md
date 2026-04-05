@@ -2,7 +2,7 @@
 
 ![lowcortisol](low-cortisol.png)
 
-> A GitHub Actions bot that commits a "productive" message to your repo every day — so your contribution graph stays green while you question your life choices.
+> A GitHub Actions bot that commits a "productive" message to your repo every day so your contribution graph stays green while you question your life choices.
 
 ---
 
@@ -60,6 +60,16 @@ Go to **Settings** → **Actions** → **General** → **Workflow permissions**
 
 Select **Read and write permissions** and hit **Save**.
 
+### 4. Configure your email and user name
+
+- Replace "<GITHUB_EMAIL_ADDRESS>" with the email linked to your GitHub account.
+- Replace "<GITHUB_USER_NAME>" with your GitHub username or preferred display name.
+- This ensures your commits are properly attributed to your GitHub profile.
+
+```
+git config --global user.email "<GITHUB EMAIL ADDRESS>"
+git config --global user.name "<GITHUB USER NAME>"
+```
 ---
 
 ## 🔛 Turning It On / Off
